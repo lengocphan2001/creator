@@ -8,6 +8,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
+
 class DashboardController extends Controller
 {
     /**
@@ -21,4 +22,5 @@ class DashboardController extends Controller
 
         return view('admin.index')->with(['data' => $data]);
     }
+    
 }

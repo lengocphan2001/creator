@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password')->nullable();
             $table->rememberToken();
-            $table->unsignedSmallInteger('status')->default(User::STATUS_ACTIVE);
             $table->timestamps();
             $table->softDeletes();
         });

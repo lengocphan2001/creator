@@ -2,12 +2,8 @@
 
 namespace App\Helpers;
 
-use App\Services\User\CategoryService;
-
 class UserHelper
 {
-
-
     /**
      *  Get page title
      *
@@ -24,32 +20,22 @@ class UserHelper
     }
 
     /**
-     * Get user sidebar
+     * Get admin sidebar
      *
      * @return array
      */
-    public static function getUserMenu(): array
+    public static function getUserSidebar(): array
     {
         return [
             [
-                'label' => trans('user.sidebar.home'),
-                'route' => 'user.home',
+                'label' => trans('admin.sidebar.dashboard'),
+                'icon' => 'bx bx-home-circle',
+                'route' => 'dashboard',
             ],
             [
-                'label' => trans('user.sidebar.product'),
-                'route' => 'user.products.index',
-            ],
-            [
-                'label' => trans('user.sidebar.category'),
-                'items' => CategoryService::getInstance()->getListCategories()
-            ],
-            [
-                'label' => trans('user.sidebar.contact'),
-                'route' => 'user.contact',
-            ],
-            [
-                'label' => trans('user.sidebar.about'),
-                'route' => 'user.about',
+                'label' => 'Dự án',
+                'icon' => 'bx bxl-product-hunt',
+                'route' => 'route.index'
             ],
         ];
     }

@@ -11,12 +11,6 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
-
-    public const STATUS_ACTIVE = 1;
-    public const STATUS_INACTIVE = 0;
-    public const DEFAULT = 1;
-    public const NOT_DEFAULT = 0;
-
     protected $table = 'users';
 
     /**
@@ -28,7 +22,6 @@ class User extends Authenticatable
         'email',
         'password',
         'name',
-        'status',
     ];
 
     /**
@@ -40,14 +33,4 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
-    public function orders()
-    {
-        return $this->hasMany(Order::class);
-    }
-
-    public function userAddress()
-    {
-        return $this->hasOne(UserAddresses::class);
-    }
 }

@@ -33,75 +33,41 @@ class AdminHelper
                 'route' => 'dashboard',
             ],
             [
-                'label' => trans('admin.sidebar.product'),
-                'icon' => 'bx bx-closet',
+                'label' => 'Dự án',
+                'icon' => 'bx bxl-product-hunt',
                 'items' => [
                     [
-                        'label' => trans('admin.action.list'),
-                        'route' => 'products.index',
+                        'label' => 'Danh sách',
+                        'route' => 'projects.index',
                     ],
                     [
-                        'label' => trans('admin.action.create'),
-                        'route' => 'products.create',
+                        'label' => 'Tạo mới',
+                        'route' => 'projects.create',
+                    ],
+                    // [
+                    //     'label' => 'Phân công dự án',
+                    //     'route' => 'projects.assignment',
+                    // ],
+                ],
+            ],
+            [
+                'label' => 'Đối tác',
+                'icon' => 'bx bxs-user-check',
+                'items' => [
+                    [
+                        'label' => 'Danh sách',
+                        'route' => 'users.index',
+                    ],
+                    [
+                        'label' => 'Tạo mới',
+                        'route' => 'users.create',
                     ],
                 ],
             ],
             [
-                'label' => trans('admin.sidebar.category'),
+                'label' => 'Nhà sáng tạo',
                 'icon' => 'bx bx-file',
-                'items' => [
-                    [
-                        'label' => trans('admin.action.list'),
-                        'route' => 'categories.index',
-                    ],
-                    [
-                        'label' => trans('admin.action.create'),
-                        'route' => 'categories.create',
-                    ],
-                ],
-            ],
-            [
-                'label' => trans('admin.sidebar.supplier'),
-                'icon' => 'bx bx-home',
-                'items' => [
-                    [
-                        'label' => trans('admin.action.list'),
-                        'route' => 'suppliers.index',
-                    ],
-                    [
-                        'label' => trans('admin.action.create'),
-                        'route' => 'suppliers.create',
-                    ],
-                ],
-            ],
-            [
-                'label' => trans('admin.sidebar.banner'),
-                'icon' => 'bx bx-rocket',
-                'items' => [
-                    [
-                        'label' => trans('admin.action.list'),
-                        'route' => 'banners.index',
-                    ],
-                    [
-                        'label' => trans('admin.action.create'),
-                        'route' => 'banners.create',
-                    ],
-                ],
-            ],
-            [
-                'label' => trans('admin.sidebar.order'),
-                'icon' => 'bx bx-basket',
-                'route' => 'orders.index',
-            ],
-            [
-                'label' => trans('admin.sidebar.customer'),
-                'icon' => 'bx bx-user',
-                'route' => 'customers.index',
-            ],
-            [
-                'label' => trans('admin.sidebar.contact'),
-                'icon' => 'bx bx-user-voice',
-                'route' => 'contacts.index',
+                'route' => 'creators.index'
             ],
         ];
     }

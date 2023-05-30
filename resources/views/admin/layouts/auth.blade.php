@@ -14,7 +14,7 @@
                                     <a href="{{ route('admin.dashboard') }}">
                                         <div class="avatar-md profile-user-wid mb-4">
                                                 <span class="avatar-title rounded-circle bg-light">
-                                                    <img src="admin-assets\images\logo.svg" alt="" class="rounded-circle" height="24">
+                                                    <img src="admin-assets\images\logo.jpg" alt="" class="rounded-circle" height="24">
                                                 </span>
                                         </div>
                                     </a>

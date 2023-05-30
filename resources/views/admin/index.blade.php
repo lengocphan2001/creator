@@ -12,7 +12,7 @@
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item active" aria-current="page">{{ __('admin.sidebar.dashboard') }}</li>
+                            <li class="breadcrumb-item active" aria-current="page">Trang chủ</li>
                         </ol>
                     </div>
                 </div>
@@ -38,8 +38,8 @@
                                                 <div class="media">
                                                     <div class="media-body">
                                                         <p class="text-muted font-weight-medium">
-                                                            {{ trans('admin.label.totalOrder') }}</p>
-                                                        <h4 class="mb-0">1,235</h4>
+                                                            Tổng số xe trong bến</p>
+                                                        <h4 class="mb-0"></h4>
                                                     </div>
 
                                                     <div
@@ -58,8 +58,8 @@
                                                 <div class="media">
                                                     <div class="media-body">
                                                         <p class="text-muted font-weight-medium">
-                                                            {{ trans('admin.label.revenue') }}</p>
-                                                        <h4 class="mb-0">$35, 723</h4>
+                                                            Tổng số xe xuất bến</p>
+                                                        <h4 class="mb-0"></h4>
                                                     </div>
                                                     <div
                                                         class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">

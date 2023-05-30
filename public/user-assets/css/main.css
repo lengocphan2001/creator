@@ -578,7 +578,7 @@ h4 {
     display: inline-block;
     -webkit-animation: spinner 1.2s infinite ease-in-out;
     animation: spinner 1.2s infinite ease-in-out;
-    background: url(../imgs/favicon.svg);
+    background: url(../imgs/favicon.png);
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 10px #fff;
 }
@@ -5500,8 +5500,8 @@ h6.post-title {
 }
 
 .logo.logo-width-1 a img {
-    width: 120px;
-    min-width: 120px;
+    width: 160px;
+    min-width: 160px;
 }
 
 .search-style-1 form {
@@ -9391,7 +9391,7 @@ span.fi-rs-apps {
         margin-right: 0;
     }
     .logo.logo-width-1 a img {
-        width: 120px;
+        width: 160px;
     }
     .header-action .header-action-icon {
         margin-right: 15px;
@@ -9688,7 +9688,7 @@ span.fi-rs-apps {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .logo.logo-hm3 a img {
-        width: 120px;
+        width: 160px;
     }
     .header-style-5 .search-style-2 {
         display: none;
